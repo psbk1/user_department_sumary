@@ -9,7 +9,7 @@ export class UserController {
   ) {}
 
   @Get()
-  async summryByDepartment (): Promise<any>
+  async SummaryByDepartment (): Promise<any>
    {
     let users : User[] = await this.userService.list()
     let departmentSumary: SummaryByDepartmentResponse = users.reduce((acc: SummaryByDepartmentResponse, user: User) =>{

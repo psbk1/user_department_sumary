@@ -15,7 +15,7 @@ describe('UserController', () => {
   });
 
   describe('SummaryByDepartment', () => {
-    it('should return SummaryByDepartmentResponse Interface', () => {
+    it('should return SummaryByDepartment is Defined', () => {
       const userController = app.get(UserController);
       expect(userController.SummaryByDepartment()).toBeDefined();
     });
